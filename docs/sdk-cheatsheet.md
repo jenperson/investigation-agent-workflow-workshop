@@ -106,6 +106,8 @@ try:
             ...  # another turn is running on this session
         case agents.Busy():
             ...  # another turn is running on this session
+        case agents.Busy():
+            ...  # another turn is running on this session
 finally:
     await session.cancel()  # ends the session and frees its sandbox
 ```
